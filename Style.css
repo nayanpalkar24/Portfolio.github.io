@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 15px;
+    line-height: 2em;
+    color: #333;
+    font-weight: 400;
+    background: #fff;
+}
+
+.columns-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left-col-block{
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+}
+
+.right-col-block{
+    width: 50%;
+    position: absolute;
+    right: 0;
+
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    vertical-align: middle;
+    position: relative;
+}
+.header .profile-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(profile-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.header .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+.header .content h1{
+    font-size: 40px;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+}
+.header .content p{
+    font-size: 20px;
+    color: #fff;
+}
+.header .content .social-icons{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.header .content .social-icons li {
+    display: inline-block;
+    margin: 0 2px;
+
+}
+.header .content .social-icons li a{
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid #555;
+}
+
+.header .content .social-icons li a:hover{
+    border-color: #fff;
+}
+
+.header .profile-image:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(-30deg,
+    rgba(40, 80, 250, 0.5) 0%, rgba(40, 80, 250, 0.5)20%, transparent 40%, transparent 100%);
+
+}
+
+.section-wrapper{
+    padding: 50px;
+
+}
+
+.section-title{
+    margin-bottom: 15px;
+}
+.section-title h2{
+    color: #444;
+
+}
+.grey-bg{
+    background: #f9f9f9;
+}
+.expertise-item{
+    margin-bottom: 20px;
+}
+.expertise-item h3{
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 20px !important;
+    line-height: 1.8em !important;
+    font-weight: 700 !important;
+}
+h3{
+    font-size: 18px !important;
+    line-height: 1.8em !important;
+    font-weight: 500 !important;
+}
+h4{
+    font-size: 16px !important;
+    line-height: 1.8em !important;
+    font-weight: 500 !important;
+}
+
+a {
+    color: #2325ad !important;
+    text-decoration: none !important;
+
+}
+ a:hover {
+        color: #ffff !important;
+        text-decoration: none !important;
+ }
+ p{
+    margin-bottom: 20px !important;
+ }
+
+ .btn{
+    padding: 15px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    border-radius: 50 !important;
+    border: 0 !important;
+    text-transform: uppercase !important;
+ }
+ .btn-primary{
+    color: #fff !important;
+    background: #1c1ee6 !important;
+
+ }
+
+ @media( max-width: 600px){
+    .left-col-block{
+        width: 100%;
+        position: relative;
+    }
+    .right-col-block{
+        width: 100%;
+        position: relative;
+    }
+   
+ }
+
+
+
+
+
+/*
+1) em is relative to current font-size
+ex: font-size=15px;
+1em=1*current font_size;
+2em=2*current font_size;
+
+2) vh is view height
+
+3) z-index is for taking text on image(priority)
+
+4) linear-gradient([<angle> | to <side-or-corner>]? , <color-stop-list>)
+
+/*
+
+5) adding social icons:
+
+
+6) for prograss bar just go to bootstrap->get started->components->progress copy code which bar u want 
+  and just paste in ur html doc.
+
+7) for project and internship: go to bootstrap->components->accordions->use whichever u want take code and change accordingly.
+  for portfolio slding: go to bootstrap->components->carousel->use the sliding whch is with title->chane accordingly in code.
+
+8) in contact: Adding the live map is done-> go to google map->click on menu bar->share or embed map->embed map->make it small=>copy iframe code and put it in ur html code. fit it accordingly
+  
+  
+/*
+/*
